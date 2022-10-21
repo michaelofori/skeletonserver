@@ -18,4 +18,4 @@ if($conn === false){
 ?>
 
 
-mysql://b5880261eaf58f:7039c06d@us-cdbr-east-06.cleardb.net/heroku_be8205cf6fda2b0?reconnect=true
+<!-- mysql://b5880261eaf58f:7039c06d@us-cdbr-east-06.cleardb.net/heroku_be8205cf6fda2b0?reconnect=true -->
