@@ -10,6 +10,8 @@
     return json_encode($result);
     } 
 
+
+    viewContact();
  
 
 
