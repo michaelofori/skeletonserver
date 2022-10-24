@@ -11,7 +11,7 @@
     // } 
 
 
-    viewContact();
+    // viewContact();
 
     $result=selectAllCtr();
 
