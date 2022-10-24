@@ -30,7 +30,8 @@ function displayAllCtr(){
 
 
 
-} echo "<table>";
+} 
+// echo "<table>";
 
         
 
