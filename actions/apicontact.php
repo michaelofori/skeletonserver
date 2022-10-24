@@ -13,10 +13,10 @@
 
     // viewContact();
 
-    $result=selectAllCtr();
+    
 
-
-    echo json_encode($result);
+    $result= json_encode(selectAllCtr());
+    echo $result;
 
 
 ?>
