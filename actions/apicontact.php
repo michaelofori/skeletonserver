@@ -15,7 +15,7 @@
 
     
 
-    $result= json_encode(selectAllCtr());
+    $result= json_encode(array(selectAllCtr()));
     echo $result;
 
 
