@@ -3,7 +3,7 @@
 
     function viewContact() {
 
-        $result=displayAllCtr();
+        $result=selectAllCtr();
 
     echo json_encode($result);
 
