@@ -27,16 +27,21 @@
             <input type="text" id="last-name" />
         </div>
         <div class="form-submit">
-            <button type="submit" onclick="payWithPaystack()"> Pay </button>
+            <button type="submit" onclick="payWithPaystack()"   onclick="redirect()"> Pay </button>
         </div>
     </form>
 
     <script src="https://js.paystack.co/v1/inline.js"></script>
     
     <script>
+
+function redirect()
+{
+    window.location.href="../index.php";
+}
       
         const paymentForm = document.getElementById('paymentForm');
-        paymentForm.addEventListener("submit", payWithPaystack,redirect, false);
+        paymentForm.addEventListener("submit", payWithPaystack, false);
 
         function payWithPaystack(e) {
             e.preventDefault();
@@ -61,13 +66,10 @@
             });
 
             handler.openIframe();
-            // onclick="redirect();"
+          
         }
 
-        function redirect()
-{
-    window.location.href="../index.php";
-}
+
     </script>
 </body>
 
