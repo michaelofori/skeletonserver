@@ -34,10 +34,7 @@
     <script src="https://js.paystack.co/v1/inline.js"></script>
     
     <script>
-        function redirect()
-{
-    window.location.href="../index.php";
-}
+      
         const paymentForm = document.getElementById('paymentForm');
         paymentForm.addEventListener("submit", payWithPaystack,redirect, false);
 
@@ -66,6 +63,11 @@
             handler.openIframe();
             // onclick="redirect();"
         }
+
+        function redirect()
+{
+    window.location.href="../index.php";
+}
     </script>
 </body>
 
