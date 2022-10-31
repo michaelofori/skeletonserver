@@ -27,7 +27,7 @@
             <input type="text" id="last-name" />
         </div>
         <div class="form-submit">
-            <button type="submit" onclick="payWithPaystack()"   onclick="redirect()"> Pay </button>
+            <button type="submit" onclick="payWithPaystack()"   onclick="redirect();"> Pay </button>
         </div>
     </form>
 
