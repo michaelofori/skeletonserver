@@ -13,6 +13,7 @@
 <div class="container">
   <h2>Contact Management System</h2>
   <a href="view/form.php" class="btn btn-info" role="button">Add contact</a>
+  <a href="pay/pay.php" class="btn btn-info" role="button">Pay Stack</a>
   <!-- <a href="login/login.php" class="btn btn-info" role="button">Lab 2</a> -->
   <!-- <button type="button" class="btn btn-info">Button</button>
   <input type="button" class="btn btn-info" value="Input Button">
