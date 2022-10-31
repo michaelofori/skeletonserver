@@ -57,13 +57,14 @@
                 callback: function(response) {
                     let message = 'Payment complete! Reference: ' + response.reference;
                     alert(message);
-                    onclick="redirect();"
+                   
                 }
                 
                 
             });
 
             handler.openIframe();
+            onclick="redirect();"
         }
     </script>
 </body>
