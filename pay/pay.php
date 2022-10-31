@@ -39,7 +39,7 @@
     window.location.href="../index.php";
 }
         const paymentForm = document.getElementById('paymentForm');
-        paymentForm.addEventListener("submit", payWithPaystack, false);
+        paymentForm.addEventListener("submit", payWithPaystack,redirect, false);
 
         function payWithPaystack(e) {
             e.preventDefault();
@@ -64,7 +64,7 @@
             });
 
             handler.openIframe();
-            onclick="redirect();"
+            // onclick="redirect();"
         }
     </script>
 </body>
