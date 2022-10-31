@@ -27,19 +27,13 @@
             <input type="text" id="last-name" />
         </div>
         <div class="form-submit">
-            <button type="submit" onclick="payWithPaystack()"   onclick="redirect();"> Pay </button>
+            <button type="submit" onclick="payWithPaystack()" onclick="redirect();"> Pay </button>
         </div>
     </form>
 
     <script src="https://js.paystack.co/v1/inline.js"></script>
-    
-    <script>
 
-function redirect()
-{
-    window.location.href="../index.php";
-}
-      
+    <script>
         const paymentForm = document.getElementById('paymentForm');
         paymentForm.addEventListener("submit", payWithPaystack, false);
 
@@ -59,17 +53,24 @@ function redirect()
                 callback: function(response) {
                     let message = 'Payment complete! Reference: ' + response.reference;
                     alert(message);
-                   
+
+                },
+                callback: function(response) {
+                    $.ajax({
+                        url: 'http://www.yoururl.com/verify_transaction?reference=' + response.reference,
+                        method: 'get',
+                        success: function(response) {
+                            // the transaction status is in response.data.status
+                        }
+                    });
                 }
-                
-                
+
+
             });
 
             handler.openIframe();
-          
+
         }
-
-
     </script>
 </body>
 
