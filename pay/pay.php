@@ -32,6 +32,12 @@
     </form>
 
     <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script type="text/javascript" language="javascript">
+function redirect()
+{
+    window.location.href="../index.php";
+}
+</script>
     <script>
         const paymentForm = document.getElementById('paymentForm');
         paymentForm.addEventListener("submit", payWithPaystack, false);
@@ -52,7 +58,10 @@
                 callback: function(response) {
                     let message = 'Payment complete! Reference: ' + response.reference;
                     alert(message);
+                    onclick="redirect();"
                 }
+                
+                
             });
 
             handler.openIframe();
